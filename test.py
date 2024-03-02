@@ -13,7 +13,7 @@ def use_requests(api_url):
 
     response = requests.get(api_url)
     json_response = json.loads(response.text)
-    photo_url = json_response['url']
+    photo_url = json_response['date']
     return photo_url
 
 

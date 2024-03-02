@@ -18,9 +18,7 @@ def use_requests(api_url):
     return json_response
 
 
-if nasa_api_key == "":
-    exit
-else:
+if nasa_api_key != "":    
     print(use_requests(api_url))
 
 
